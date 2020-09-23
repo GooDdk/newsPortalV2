@@ -5,7 +5,7 @@ ob_start();
 <br>
 
 <?php
-ViewNew::ReadNews($n);
+ViewNews::ReadNews($n);
 
 echo "<br>";
 Controller::Comments($_GET['id']);

@@ -15,6 +15,15 @@ elseif ($path == 'logout')
 {
 	$response = controllerAdmin::logoutAction();
 }
+elseif($path=='newsAdd'){
+	$response=controllerAdminNews::newsAddForm();
+}
+elseif($path=='newsAddResult'){
+	$response=controllerAdminNews::newsAddResult();
+}
+elseif($path=='newsAdmin'){
+	$response=controllerAdminNews::NewsList();
+}
 else
 {
 	$response = controllerAdmin::error404();
