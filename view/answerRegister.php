@@ -27,4 +27,4 @@ if (isset($result)){
 	?>
 <?php $content = ob_get_clean(); ?>
 
-<?php inclued"view/layout.php" ?>
+<?php include"view/layout.php" ?>

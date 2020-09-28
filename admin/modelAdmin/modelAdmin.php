@@ -2,7 +2,7 @@
 class modelAdmin{
 	public static function userAuthentication()
 	{
-		if (isset($_SESSION['sesionId'])){
+		if (isset($_SESSION['sessionId'])){
 			$logIn=true;
 		}
 		else{
