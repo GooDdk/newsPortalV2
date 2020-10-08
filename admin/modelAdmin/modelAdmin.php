@@ -1,6 +1,6 @@
 <?php
 class modelAdmin{
-	public static function userAuthentication()
+	public static function userAuth()
 	{
 		if (isset($_SESSION['sessionId'])){
 			$logIn=true;
@@ -24,7 +24,7 @@ class modelAdmin{
 							{
 								$_SESSION['sessionId']=session_id();
 								$_SESSION['userId']=$item['id'];
-								$_SESSION['name']=$item['username'];
+								$_SESSION['name']=$item['name'];
 								$_SESSION['status']=$item['status'];
 								$logIn=true;
 							}

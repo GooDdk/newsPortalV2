@@ -1,4 +1,6 @@
-<?php ob_start ?>
+<?php $title = 'Страница не найдена'; ?>
+
+<?php ob_start(); ?>
 <h2>404 ошибка  </h2>
 <article>
 	

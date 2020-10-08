@@ -1,4 +1,4 @@
-<?php ob_start() ?>
+<?php ob_start(); ?>
 
 <h2>News List </h2>
 
@@ -17,7 +17,7 @@
 			<?php
 
 			foreach ($arr as $row) {
-			echo '<tr>'
+			echo '<tr>';
 
 				echo '<td>'.$row['id'].'</td>';
 
@@ -30,7 +30,7 @@
 				<a href="newsDel?id='.$row['id'].'">Delete <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
 				</td>';
 
-			echo '<tr>'
+			echo '<tr>';
 			}
 
 			?>

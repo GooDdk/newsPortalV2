@@ -20,14 +20,6 @@
 			<li><a href="testError">Info</a></li>
 			<li><a href="./">Stardileht</a></li>
 			<li><a href="registerForm">Register</a></li>
-			<div class="pull-right">
-				<li>
-					<form>
-						<input type="text" name="otsi">
-						<input type="submit" name="otsi">
-					</form>
-				</li>
-			</div>
 			</ul>
 		</nav>
 

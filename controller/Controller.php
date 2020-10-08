@@ -33,11 +33,26 @@ class Controller {
         include_once 'view/error404.php';
     }            
  
-    public static function InsertComment($c,$id){
-        Comments::InsertComment($c,$id);
-        //self::NewsByID($id);
-        header('Location:news?id='.$id.'#ctable');
-    } 
+    public static function InsertComment($c, $id) {
+        Comments::InsertComment($c, $id);
+        self::NewsByID($id);
+    }
+
+    public static function Comments($newsid) {
+        $arr = Comments::getCommentByNewsID($newsid);
+        ViewComments::CommentsByNews($arr);
+    }
+
+    public static function CommentsCount($newsid) {
+        $arr = Comments::getCommentsCountByNewsID($newsid);
+        ViewComments::CommentsCount($arr);
+    }
+
+    public static function CommentsCountWithAncor($newsid) {
+        $arr = Comments::getCommentsCountByNewsID($newsid);
+        ViewComments::CommentsCountWithAncor($arr);
+    }
+
 
 
     public function registerForm()

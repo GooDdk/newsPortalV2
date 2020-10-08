@@ -13,16 +13,14 @@ if ($path == '' OR $path == 'index' OR $path == 'index.php') {
     $response = Controller::NewsByCatID($_GET['id']);
 } elseif ($path == 'news' and isset($_GET['id'])) {
     $response = Controller::NewsByID($_GET['id']);
-} elseif($path ==  'insertcomment' and isset($_GET['comment'],$_GET['id']))
-    { 
-        $respose = Controller::InsertComment($_GET['comment'],$_GET['id']);
-    }
-
-elseif ($path == 'registerForm') 
+} elseif($path ==  'insertcomment' and isset($_GET['comment'],$_GET['id'])) { 
+    $respose = Controller::InsertComment($_GET['comment'],$_GET['id']);
+}
+elseif ($path == 'registerForm')
 {
     $response = Controller::registerForm();
 }
-elseif ($path == 'registerAnswer') 
+elseif ($path == 'registerAnswer')
 {
     $response = Controller::registerUser();
 } else {
